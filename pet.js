@@ -4,10 +4,10 @@ import { ImageBackground } from 'react-native-web';
 
 const Pet = ({ pet }) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.flexContainer}>
      <ImageBackground source={require('./footprint.png')} style={styles.image} imageStyle={{ opacity: 0.11 }}/>
       <View style={styles.infoContainer}>
-      
+        <Text style={styles.headline}>Pet</Text>
         <Text style={styles.petName}>Name: {pet.name}</Text>
         <Text style={styles.petStatus}>Status: {pet.pet_status}</Text>
         <Text style={styles.description}>Description: {pet.description}</Text>
@@ -36,12 +36,15 @@ const Pet = ({ pet }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  flexContainer: {
+    flexGrow:1,
     flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
     padding: 16,
     borderWidth: 1,
     borderColor: '#ccc',
-    borderRadius: 8,
+    borderRadius: 20,
     marginBottom: 16,
     shadowColor: '#000',
     shadowOffset: {
@@ -52,20 +55,27 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 3,
   },
+ 
   image: {
     position: 'absolute',
     width: '100%',
     height: '100%',
   },
+  headline:{
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 8,
+  },
   infoContainer: {
+    flexDirection: 'column',
     flex: 1,
     marginRight: 16,
   },
   petPhoto: {
-    width: 150,
-    height: 150,
+    width: 200,
+    height: 200,
     resizeMode: 'cover',
-    borderRadius: 75,
+    borderRadius: 50,
   },
   petName: {
     fontSize: 18,

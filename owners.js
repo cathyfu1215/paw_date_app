@@ -4,6 +4,7 @@ import { View, Text, TouchableOpacity, StyleSheet,ImageBackground,Image } from '
 const Owners = ({ owner }) => {
   return (
     <View style={styles.container}>
+      <Text style={styles.headline}>Owner</Text>
       <ImageBackground source={require('./petsfaces.jpg')} style={styles.image} imageStyle={{ opacity: 0.11 }}/>
       <Text style={styles.ownerName}>{owner.name}</Text>
       <Text style={styles.description}>{owner.description}</Text>
@@ -17,13 +18,15 @@ const Owners = ({ owner }) => {
       <TouchableOpacity style={styles.button}>Message Me</TouchableOpacity>
       <TouchableOpacity style={styles.blockbutton}>Block this person</TouchableOpacity>
       </View>
-      
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    flexGrow:1,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
     padding: 16,
     backgroundColor: 'rgba(255, 255, 255, 0.5)',
     borderWidth: 1,
@@ -35,6 +38,11 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: '100%',
     height: '100%',
+  },
+  headline:{
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 8,
   },
   buttonContainer: {
     //add upper margin to the button container
@@ -77,6 +85,8 @@ const styles = StyleSheet.create({
     // add outline to the button
     borderWidth: 1,
     borderColor: 'gray',
+    marginRight: 8,
+    marginLeft: 8,
   },
   blockbutton: {
     backgroundColor: 'lightpink',
@@ -86,6 +96,8 @@ const styles = StyleSheet.create({
     // add outline to the button
     borderWidth: 1,
     borderColor: 'gray',
+    marginRight: 8,
+    marginLeft: 8,
   },
 });
 
