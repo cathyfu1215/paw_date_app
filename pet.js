@@ -1,146 +1,147 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, Pressable } from 'react-native';
-import { ImageBackground } from 'react-native-web';
+import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
 
 const Pet = ({ pet }) => {
   return (
-    <View style={styles.flexContainer}>
-     <ImageBackground source={require('./footprint.png')} style={styles.image} imageStyle={{ opacity: 0.11 }}/>
-      <View style={styles.infoContainer}>
-        <Text style={styles.headline}>Pet</Text>
-        <Text style={styles.petName}>Name: {pet.name}</Text>
-        <Text style={styles.petStatus}>Status: {pet.pet_status}</Text>
-        <Text style={styles.description}>Description: {pet.description}</Text>
-        <Text style={styles.gender}>Gender: {pet.gender}</Text>
-        <Text style={styles.postalCode}>Postal Code: {pet.postal_code}</Text>
-        <Text style={styles.rating}>Avg Rating: {pet.avg_rating}</Text>
-        <Text style={styles.rating}>Total Ratings: {pet.num_ratings}</Text>
-        <Text style={styles.lookingFor}>Looking for: {pet.looking_for}</Text>
-        <Text style={styles.registerTime}>Registered at: {pet.registered_time}</Text>
-        <View style={styles.buttonContainer}>
-          <Pressable style={styles.button} onPress={() => {}}>
-            <Text style={styles.buttonText}>More Information</Text>
-          </Pressable>
-          <Pressable style={styles.button} onPress={() => {}}>
-            <Text style={styles.buttonText}>See Owners</Text>
-          </Pressable>
-          <Pressable style={styles.button} onPress={() => {}}>
-            <Text style={styles.buttonText}>Follow Pet</Text>
-          </Pressable>
-          
+    <View style={styles.container}>
+      <ImageBackground source={require('./footprint.png')} style={styles.backgroundImage} imageStyle={{ opacity: 0.1 }}>
+        <Text style={styles.petName}>NAME: {pet.name}</Text>
+        <View style={styles.contentContainer}>
+          <View style={styles.leftColumn}>
+            <Image source={{ uri: pet.photo }} style={styles.petPhoto} />
+            <Text style={styles.description}>
+              <Text style={styles.boldText}>Gender:</Text> {pet.gender} {'\n'}
+              <Text style={styles.boldText}>Description:</Text> {pet.description}
+            </Text>
+          </View>
+          <View style={styles.middleColumn}>
+            <View style={styles.infoBox}>
+              <Text style={styles.infoTitle}>Average Rating</Text>
+              <Text style={styles.infoText}>{pet.avg_rating}</Text>
+            </View>
+            <View style={styles.infoBox}>
+              <Text style={styles.infoTitle}>Total Ratings</Text>
+              <Text style={styles.infoText}>{pet.num_ratings}</Text>
+            </View>
+            <View style={styles.infoBox}>
+              <Text style={styles.infoTitle}>Goal</Text>
+              <Text style={styles.infoText}>{pet.looking_for}</Text>
+            </View>
+          </View>
+          <View style={styles.rightColumn}>
+            <View style={styles.infoBox}>
+              <Text style={styles.infoTitle}>Status</Text>
+              <Text style={styles.infoText}>{pet.pet_status}</Text>
+            </View>
+            <View style={styles.infoBox}>
+              <Text style={styles.infoTitle}>Registered Time</Text>
+              <Text style={styles.infoText}>{pet.registered_time}</Text>
+            </View>
+          </View>
         </View>
+      </ImageBackground>
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
+          <Text style={styles.buttonText}>More Information</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
+          <Text style={styles.buttonText}>See Owner</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
+          <Text style={styles.buttonText}>Follow Dog</Text>
+        </TouchableOpacity>
       </View>
-      <Image source={{ uri: pet.photo }} style={styles.petPhoto} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  flexContainer: {
-    flexGrow:1,
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
+  container: {
     padding: 16,
     borderWidth: 1,
     borderColor: '#ccc',
-    borderRadius: 20,
+    borderRadius: 8,
     marginBottom: 16,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 3,
+    backgroundColor: '#f7f7f7',
+    position: 'relative',
+    overflow: 'hidden',
   },
- 
-  image: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-  },
-  headline:{
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 8,
-  },
-  infoContainer: {
-    flexDirection: 'column',
+  backgroundImage: {
     flex: 1,
-    marginRight: 16,
-  },
-  petPhoto: {
-    width: 200,
-    height: 200,
     resizeMode: 'cover',
-    borderRadius: 50,
+    padding: 16,
   },
   petName: {
-    fontSize: 18,
+    fontSize: 24,
     fontWeight: 'bold',
-    color: 'black',
+    textAlign: 'center',
+    marginBottom: 16,
+    color: '#4b4b4b',
   },
-  petStatus: {
+  contentContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  leftColumn: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  middleColumn: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+  rightColumn: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+  petPhoto: {
+    width: 150,
+    height: 150,
+    borderRadius: 75,
+    marginBottom: 8,
+  },
+  infoBox: {
+    backgroundColor: '#d3d3d3',
+    borderRadius: 8,
+    padding: 8,
+    marginBottom: 8,
+    alignItems: 'center',
+  },
+  infoTitle: {
     fontSize: 14,
-    color: 'black',
+    color: '#4b4b4b',
+  },
+  infoText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#4b4b4b',
   },
   description: {
     fontSize: 14,
-    marginTop: 8,
-    lineHeight: 18,
-    color: 'black',
+    color: '#4b4b4b',
+    lineHeight: 20,
+    textAlign: 'center',
   },
-  gender: {
-    fontSize: 14,
-    marginTop: 8,
-    color: 'black',
-  },
-  postalCode: {
-    fontSize: 14,
-    marginTop: 8,
-    color: 'black',
-  },
-  rating: {
-    fontSize: 14,
+  boldText: {
     fontWeight: 'bold',
-    marginTop: 8,
-    color: 'black',
-  },
-  lookingFor: {
-    fontSize: 14,
-    marginTop: 8,
-    color: 'black',
-  },
-  registerTime: {
-    fontSize: 14,
-    marginTop: 8,
-    color: 'black',
   },
   buttonContainer: {
-    //add upper margin to the button container
-    marginTop: 18,
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    
+    justifyContent: 'space-around',
+    marginTop: 16,
   },
   button: {
-    backgroundColor: 'lightblue',
-    borderRadius: 20, // Added border radius
-    paddingVertical: 6, // Adjusted padding
-    paddingHorizontal: 12, // Adjusted padding
-    // add outline to the button
+    backgroundColor: '#a8dadc',
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 20,
     borderWidth: 1,
-    borderColor: 'gray',
-    paddingLeft: 10,
-    paddingRight: 10,
-    marginLeft: 5,
-    marginRight: 5,
+    borderColor: '#457b9d',
   },
   buttonText: {
     fontSize: 14,
-    color: 'gray',
+    color: '#457b9d',
+    textAlign: 'center',
   },
 });
 

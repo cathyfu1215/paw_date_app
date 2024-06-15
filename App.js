@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { ScrollView } from 'react-native-web';
 import Owner from './owners'; 
 import Pet from './pet'; 
 import { StatusBar } from 'expo-status-bar';
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <>
       <NativeRouter>
-        <Main />
+      <ScrollView><Main /></ScrollView>
       </NativeRouter>
       <StatusBar style="auto" />
     </>
