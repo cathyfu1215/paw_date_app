@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, Pressable } from 'react-native';
 import { ImageBackground } from 'react-native-web';
 
 const Pet = ({ pet }) => {
@@ -18,15 +18,15 @@ const Pet = ({ pet }) => {
         <Text style={styles.lookingFor}>Looking for: {pet.looking_for}</Text>
         <Text style={styles.registerTime}>Registered at: {pet.registered_time}</Text>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button} onPress={() => {}}>
+          <Pressable style={styles.button} onPress={() => {}}>
             <Text style={styles.buttonText}>More Information</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => {}}>
+          </Pressable>
+          <Pressable style={styles.button} onPress={() => {}}>
             <Text style={styles.buttonText}>See Owners</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => {}}>
+          </Pressable>
+          <Pressable style={styles.button} onPress={() => {}}>
             <Text style={styles.buttonText}>Follow Pet</Text>
-          </TouchableOpacity>
+          </Pressable>
           
         </View>
       </View>

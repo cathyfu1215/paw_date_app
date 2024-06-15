@@ -1,4 +1,5 @@
-import { View, StyleSheet, Pressable } from 'react-native';
+import { Text,View, StyleSheet, Pressable } from 'react-native';
+import { Link } from "react-router-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -13,23 +14,28 @@ const styles = StyleSheet.create({
   },
     button: {
         color: 'white',
-        fontSize: 20,
+        fontSize: 16,
         fontWeight: 'bold',
-        padding: 15,
+        padding: 10,
         borderRadius: 20, // Added border radius
-        marginRight: 8,
-        marginLeft: 8,
+        marginRight:5,
+        marginLeft:5,
         // ...
     },
   // ...
 });
 
 const AppBar = () => {
-  return <View style={styles.container}>
-    <Pressable style={styles.button}>Pets</Pressable>
-    <Pressable style={styles.button}>Book a playdate</Pressable>
-    <Pressable style={styles.button}>Rate a playdate</Pressable>
-    </View>;
+  return (
+    <View style={styles.container}>
+      <Link to="/pets"><Text style={styles.button}>Pets</Text></Link>
+      <Link to="/owners"><Text style={styles.button}>Owners</Text></Link>
+      <Link to="/book"><Text style={styles.button}>Book a Playdate</Text></Link>
+      <Link to="/rate"><Text style={styles.button}>Rate a Playdate</Text></Link>
+      <Link to="/signin"><Text style={styles.button}>Sign In</Text></Link>
+      <Link to="/signup"><Text style={styles.button}>Sign Up</Text></Link>
+    </View>
+  );
 };
 
 export default AppBar;

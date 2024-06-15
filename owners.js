@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet,ImageBackground,Image } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet,ImageBackground,Image, Pressable } from 'react-native';
 
 const Owners = ({ owner }) => {
   return (
@@ -15,8 +15,8 @@ const Owners = ({ owner }) => {
       <Text style={styles.postalCode}>Postal Code: {owner.postal_code}</Text>
       <Text style={styles.registerTime}>Registered at: {owner.register_time}</Text>
       <View style={styles.buttonContainer}>
-      <TouchableOpacity style={styles.button}>Message Me</TouchableOpacity>
-      <TouchableOpacity style={styles.blockbutton}>Block this person</TouchableOpacity>
+      <Pressable style={styles.button}><Text>Message Me</Text></Pressable>
+      <Pressable style={styles.blockbutton}><Text>Block this person</Text></Pressable>
       </View>
     </View>
   );
