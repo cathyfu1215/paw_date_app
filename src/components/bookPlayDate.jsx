@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { useFormik } from 'formik';
+import { ImageBackground } from 'react-native';
+
 
 const BookPlayDate = () => {
   const [playdateId, setPlaydateId] = useState('');
@@ -34,6 +36,8 @@ const BookPlayDate = () => {
 
   return (
     <View style={styles.container}>
+    <ImageBackground source={require('../../petsfaces.jpg')} style={styles.image} imageStyle={{ opacity: 0.11 }}>
+
       <Text style={styles.title}>Book Play Date</Text>
       <TextInput style={styles.input} placeholder="Pet 1 ID" onChangeText={formik.handleChange('pet1Id')} value={formik.values.pet1Id} />
       <TextInput style={styles.input} placeholder="Pet 1 Owner ID" onChangeText={formik.handleChange('pet1OwnerId')} value={formik.values.pet1OwnerId} />
@@ -44,20 +48,32 @@ const BookPlayDate = () => {
       <TextInput style={styles.input} placeholder="Activity Type" onChangeText={formik.handleChange('activityType')} value={formik.values.activityType} />
       <TextInput style={styles.input} placeholder="Playdate Status" onChangeText={setPlaydateStatus} value={playdateStatus} />
       <Button title="Submit" onPress={formik.handleSubmit} />
+    </ImageBackground>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: '#fff',
-  },
+    container: {
+        flexGrow:1,
+        justifyContent: 'flex-start',
+        alignItems: 'flex-start',
+        padding: 16,
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        borderWidth: 1,
+        borderColor: '#ccc',
+        borderRadius: 8,
+        marginBottom: 16,
+      },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+  },
+  image: {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
   },
   input: {
     height: 40,

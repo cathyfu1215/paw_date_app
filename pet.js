@@ -4,42 +4,47 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from
 const Pet = ({ pet }) => {
   return (
     <View style={styles.container}>
-      <ImageBackground source={require('./footprint.png')} style={styles.backgroundImage} imageStyle={{ opacity: 0.1 }}>
+      <ImageBackground source={require('./coverphoto.jpg')} style={styles.backgroundImage} imageStyle={{ opacity: 0.1 }}>
         <Text style={styles.petName}>NAME: {pet.name}</Text>
         <View style={styles.contentContainer}>
           <View style={styles.leftColumn}>
             <Image source={{ uri: pet.photo }} style={styles.petPhoto} />
-            <Text style={styles.description}>
-              <Text style={styles.boldText}>Gender:</Text> {pet.gender} {'\n'}
-              <Text style={styles.boldText}>Description:</Text> {pet.description}
-            </Text>
+            <View style={styles.textContainer}>
+              <Text style={styles.description}>
+                <Text style={styles.boldText}>Gender:</Text> {pet.gender}
+              </Text>
+              <Text style={styles.description}>
+                <Text style={styles.boldText}>Description:</Text> {pet.description}
+              </Text>
+              <Text style={styles.description}>
+                <Text style={styles.boldText}>Status:</Text> {pet.pet_status}
+              </Text>
+            </View>
           </View>
           <View style={styles.middleColumn}>
-            <View style={styles.infoBox}>
-              <Text style={styles.infoTitle}>Average Rating</Text>
-              <Text style={styles.infoText}>{pet.avg_rating}</Text>
+            <View style={styles.infoRow}>
+              <View style={styles.infoBox}>
+                <Text style={styles.infoTitle}>Average Rating</Text>
+                <Text style={styles.infoText}>{pet.avg_rating}</Text>
+              </View>
+              <View style={styles.infoBox}>
+                <Text style={styles.infoTitle}>Total Ratings</Text>
+                <Text style={styles.infoText}>{pet.num_ratings}</Text>
+              </View>
             </View>
-            <View style={styles.infoBox}>
-              <Text style={styles.infoTitle}>Total Ratings</Text>
-              <Text style={styles.infoText}>{pet.num_ratings}</Text>
-            </View>
-            <View style={styles.infoBox}>
-              <Text style={styles.infoTitle}>Goal</Text>
-              <Text style={styles.infoText}>{pet.looking_for}</Text>
-            </View>
-          </View>
-          <View style={styles.rightColumn}>
-            <View style={styles.infoBox}>
-              <Text style={styles.infoTitle}>Status</Text>
-              <Text style={styles.infoText}>{pet.pet_status}</Text>
-            </View>
-            <View style={styles.infoBox}>
-              <Text style={styles.infoTitle}>Registered Time</Text>
-              <Text style={styles.infoText}>{pet.registered_time}</Text>
+            <View style={styles.infoRow}>
+              <View style={styles.infoBox}>
+                <Text style={styles.infoTitle}>Goal</Text>
+                <Text style={styles.infoText}>{pet.looking_for}</Text>
+              </View>
+              <View style={styles.infoBox}>
+                <Text style={styles.infoTitle}>Registered Time</Text>
+                <Text style={styles.infoText}>{pet.registered_time}</Text>
+              </View>
             </View>
           </View>
         </View>
-      </ImageBackground>
+      
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={() => {}}>
           <Text style={styles.buttonText}>More Information</Text>
@@ -51,6 +56,7 @@ const Pet = ({ pet }) => {
           <Text style={styles.buttonText}>Follow Dog</Text>
         </TouchableOpacity>
       </View>
+      </ImageBackground>
     </View>
   );
 };
@@ -67,9 +73,9 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   backgroundImage: {
-    flex: 1,
-    resizeMode: 'cover',
-    padding: 16,
+    position: 'relative',
+    width: '100%',
+    height: '100%',
   },
   petName: {
     fontSize: 24,
@@ -84,13 +90,9 @@ const styles = StyleSheet.create({
   },
   leftColumn: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: 'flex-start',
   },
   middleColumn: {
-    flex: 1,
-    justifyContent: 'space-between',
-  },
-  rightColumn: {
     flex: 1,
     justifyContent: 'space-between',
   },
@@ -100,12 +102,30 @@ const styles = StyleSheet.create({
     borderRadius: 75,
     marginBottom: 8,
   },
+  textContainer: {
+    alignItems: 'flex-start',
+  },
+  description: {
+    fontSize: 14,
+    color: '#4b4b4b',
+    lineHeight: 20,
+    textAlign: 'left',
+  },
+  boldText: {
+    fontWeight: 'bold',
+  },
+  infoRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 8,
+  },
   infoBox: {
     backgroundColor: '#d3d3d3',
     borderRadius: 8,
     padding: 8,
-    marginBottom: 8,
     alignItems: 'center',
+    flex: 1,
+    marginHorizontal: 4,
   },
   infoTitle: {
     fontSize: 14,
@@ -115,15 +135,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     color: '#4b4b4b',
-  },
-  description: {
-    fontSize: 14,
-    color: '#4b4b4b',
-    lineHeight: 20,
-    textAlign: 'center',
-  },
-  boldText: {
-    fontWeight: 'bold',
   },
   buttonContainer: {
     flexDirection: 'row',

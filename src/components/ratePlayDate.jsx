@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { ImageBackground } from 'react-native';
 
 const RatePlayDate = () => {
   const [ratingId, setRatingId] = useState('');
@@ -19,6 +20,8 @@ const RatePlayDate = () => {
 
   return (
     <View style={styles.container}>
+    <ImageBackground source={require('../../petsfaces.jpg')} style={styles.image} imageStyle={{ opacity: 0.11 }}>
+
       <Text style={styles.title}>Rate Play Date</Text>
       <TextInput style={styles.input} placeholder="Rating ID" onChangeText={setRatingId} value={ratingId} />
       <TextInput style={styles.input} placeholder="Owner ID Who Rates" onChangeText={setOwnerIdWhoRates} value={ownerIdWhoRates} />
@@ -31,16 +34,23 @@ const RatePlayDate = () => {
       <TextInput style={styles.input} placeholder="Rating Date" onChangeText={setRatingDate} value={ratingDate} />
       <TextInput style={styles.input} placeholder="Playdate ID" onChangeText={setPlaydateId} value={playdateId} />
       <Button title="Submit" onPress={submitForm} />
-    </View>
+      </ImageBackground>
+      </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: '#fff',
-  },
+    container: {
+        flexGrow:1,
+        justifyContent: 'flex-start',
+        alignItems: 'flex-start',
+        padding: 16,
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        borderWidth: 1,
+        borderColor: '#ccc',
+        borderRadius: 8,
+        marginBottom: 16,
+      },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
@@ -52,6 +62,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 10,
     paddingLeft: 10,
+  },
+  image: {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
   },
 });
 

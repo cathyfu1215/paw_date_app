@@ -15,7 +15,7 @@ const Owners = ({ owner }) => {
       <Text style={styles.postalCode}>Postal Code: {owner.postal_code}</Text>
       <Text style={styles.registerTime}>Registered at: {owner.register_time}</Text>
       <View style={styles.buttonContainer}>
-      <Pressable style={styles.button}><Text>Message Me</Text></Pressable>
+      <Pressable style={styles.button}><Text>Send a Message</Text></Pressable>
       <Pressable style={styles.blockbutton}><Text>Block this person</Text></Pressable>
       </View>
     </View>

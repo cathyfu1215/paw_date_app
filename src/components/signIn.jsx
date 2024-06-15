@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet } from 'react-native';
+import { ImageBackground } from 'react-native';
 
 const SignIn = () => {
   const [username, setUsername] = useState('');
@@ -11,7 +12,7 @@ const SignIn = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <ImageBackground source={require('../../petsfaces.jpg')} style={styles.image} imageStyle={{ opacity: 0.11 }}>
       <TextInput
         style={styles.input}
         placeholder="Username"
@@ -26,7 +27,7 @@ const SignIn = () => {
         secureTextEntry
       />
       <Button title="Sign In" onPress={handleSignIn} />
-    </View>
+    </ImageBackground>
   );
 };
 
@@ -42,6 +43,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 12,
     paddingLeft: 8,
+  },
+  image: {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
   },
 });
 
