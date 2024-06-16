@@ -9,6 +9,7 @@ import SignIn from './signIn';
 import SignUp from './signUp';
 import RatePlayDate from './ratePlayDate';
 import BookPlayDate from './bookPlayDate';
+import PlaydateList from './PlaydateList';
 
 
 const styles = StyleSheet.create({
@@ -35,6 +36,7 @@ const Main = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/rate" element={<RatePlayDate />} />
         <Route path="/book" element={<BookPlayDate />} />
+        <Route path="/playdates" element={<PlaydateList />} />
         <Route path="/owners" element={<OwnerList />} />
         <Route path="/" element={<PetList />} />
         <Route path="*" element={<Navigate to="/" replace />} />
