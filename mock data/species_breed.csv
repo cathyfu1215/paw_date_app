@@ -1,0 +1,98 @@
+species_breed_id,species,breed
+1,Dog,Affenhuahua
+2,Dog,Affenpinscher
+3,Dog,Afghan Collie
+4,Dog,Afghan Hound
+5,Dog,Airedale Terrier
+6,Dog,Airedoodle
+7,Dog,Akbash
+8,Dog,Akita
+9,Dog,Akita Shepherd
+10,Dog,Alapaha Blue Blood Bulldog
+11,Dog,Alaskan Klee Kai
+12,Dog,Alaskan Malamute
+13,Dog,American Bandogge
+14,Dog,American Bulldog
+15,Dog,American Bully
+16,Dog,American English Coonhound
+17,Dog,American Eskimo Dog
+18,Dog,American Foxhound
+19,Dog,American Hairless Terrier
+20,Dog,American Leopard Hound
+21,Dog,American Mastiff
+22,Dog,American Pit Bull Terrier
+23,Dog,American Staffordshire Terrier
+24,Dog,American Toy Terrier
+25,Dog,American Water Spaniel
+26,Dog,Anatolian Pyrenees
+27,Dog,Anatolian Shepherd Dog
+28,Dog,Appenzeller Sennenhund
+29,Dog,Australian Cattle Dog
+30,Dog,Australian Kelpie
+31,Dog,Australian Retriever
+32,Dog,Australian Shepherd
+33,Dog,Australian Shepherd Husky
+34,Dog,Australian Terrier
+35,Dog,Australian Terrier Mix
+36,Dog,Staffordshire Bull Terrier
+37,Dog,Standard Schnauzer
+38,Dog,Sussex Spaniel
+39,Dog,Swedish Vallhund
+40,Dog,Tibetan Mastiff
+41,Dog,Tibetan Spaniel
+42,Cat,Abyssinian
+43,Cat,American Bobtail
+44,Cat,American Bobtail Shorthair
+45,Cat,American Curl
+46,Cat,American Curl Longhair
+47,Cat,American Shorthair
+48,Cat,American Wirehair
+49,Cat,Australian Mist
+50,Cat,Balinese
+51,Cat,Bengal
+52,Cat,Bengal Longhair
+53,Cat,Birman
+54,Cat,Bombay
+55,Cat,British Longhair
+56,Cat,British Shorthair
+57,Cat,Burmese
+58,Cat,Burmilla
+59,Cat,Burmilla Longhair
+60,Cat,Chartreux
+61,Cat,Chausie
+62,Cat,Colorpoint Shorthair
+63,Cat,Cornish Rex
+64,Cat,Cymric
+65,Cat,Devon Rex
+66,Cat,Donskoy
+67,Cat,LaPerm Shorthair
+68,Cat,Lykoi
+69,Cat,Manx
+70,Cat,Maine Coon
+71,Cat,Maine Coon Polydactyl
+72,Cat,Minuet
+73,Cat,Minuet Longhair
+74,Cat,Munchkin
+75,Cat,Munchkin Longhair
+76,Cat,Nebelung
+77,Cat,Norwegian Forest Cat
+78,Cat,Ocicat
+80,Cat,Oriental
+82,Cat,Peterbald
+83,Cat,Pixiebob
+85,Cat,Pixiebob Longhair
+86,Skinks,Garden Skink
+87,Pet Bird,Canary
+88,Pet Rabbit,Dwarf Hotot
+89,Pet Hamster,Dwarf Hamster
+90,Pet Rat,Cinnamon
+91,Asian House Gecko,Asian House Gecko
+92,Agamids,Bearded Dragon
+93,Chameleons,Bitaeniatus Chameleon
+94,Iguana,Blue Iguana
+95,Anole,Bahaman Anole
+96,Tegu,Argentine Red Tegu
+97,Monitor,Ackie Monitor (Ridge-Tailed Monitor)
+98, Guinea Pig,White Crested
+99,Sugar Glider,Mosaic Sugar Glider
+100,Prairie Dog,Mexican Prairie Dog
