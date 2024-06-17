@@ -93,8 +93,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   petPhoto: {
-    width: 150,
-    height: 150,
+    width: 180,
+    height: 180,
     borderRadius: 75,
     marginBottom: 8,
     alignSelf: 'center',
