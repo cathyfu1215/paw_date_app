@@ -4,7 +4,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from
 const Pet = ({ pet }) => {
   return (
     <View style={styles.container}>
-      <ImageBackground source={require('./footprint.png')} style={styles.backgroundImage} imageStyle={{ opacity: 0.1 }}>
+      <ImageBackground source={require('./p1.jpg')} style={styles.backgroundImage} imageStyle={{ opacity: 0.1 }}>
         <Text style={styles.petName}>NAME: {pet.name}</Text>
         <View style={styles.contentContainer}>
           <View style={styles.leftColumn}>
@@ -72,6 +72,8 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'cover',
     padding: 16,
+    width: '110%',
+    height: '80%',
   },
   petName: {
     fontSize: 24,

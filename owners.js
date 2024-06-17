@@ -4,7 +4,7 @@ import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from 'react
 const Owners = ({ owner }) => {
   return (
     <View style={styles.container}>
-      <ImageBackground source={require('./petsfaces.jpg')} style={styles.image} imageStyle={{ opacity: 0.11 }} />
+      <ImageBackground source={require('./o1.jpg')} style={styles.image} imageStyle={{ opacity: 0.11 }} />
       <Text style={styles.ownerName}>{owner.name}</Text>
       <View style={styles.contentContainer}>
         <View style={styles.ratingContainer}>
