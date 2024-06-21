@@ -1,20 +1,21 @@
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('1', '65', '57');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('2', '3', '26');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('3', '2', '80');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('4', '20', '92');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('5', '40', '1');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('6', '27', '59');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('7', '61', '63');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('8', '89', '44');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('9', '97', '18');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('10', '62', '66');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('11', '39', '17');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('12', '27', '72');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('13', '94', '77');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('14', '93', '69');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('15', '70', '80');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('16', '70', '68');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('17', '65', '32');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('18', '10', '26');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('19', '9', '83');
-INSERT INTO block (block_transaction_id, blocker_id, blockee_id) VALUES ('20', '44', '39');
+INSERT INTO block VALUES
+('1', '65', '57'),
+('2', '3', '26'),
+('3', '2', '80'),
+('4', '20', '92'),
+('5', '40', '1'),
+('6', '27', '59'),
+('7', '61', '63'),
+('8', '89', '44'),
+('9', '97', '18'),
+('10', '62', '66'),
+('11', '39', '17'),
+('12', '27', '72'),
+('13', '94', '77'),
+('14', '93', '69'),
+('15', '70', '80'),
+('16', '70', '68'),
+('17', '65', '32'),
+('18', '10', '26'),
+('19', '9', '83'),
+('20', '44', '39');
