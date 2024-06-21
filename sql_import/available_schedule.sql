@@ -1,117 +1,116 @@
-INSERT INTO available_schedule VALUES
-('1', '1', '2024-06-01', 'afternoon', 'confirmed'),
-('2', '2', '2024-06-02', 'afternoon', 'booked'),
-('3', '3', '2024-06-03', 'evening', 'confirmed'),
-('4', '4', '2024-06-04', 'night', 'available'),
-('5', '5', '2024-07-19', 'afternoon', 'confirmed'),
-('6', '6', '2024-06-01', 'afternoon', 'available'),
-('7', '7', '2024-06-07', 'evening', 'available'),
-('8', '8', '2024-06-07', 'evening', 'available'),
-('9', '9', '2024-06-09', 'morning', 'available'),
-('10', '10', '2024-06-10', 'afternoon', 'available'),
-('11', '11', '2024-06-11', 'evening', 'booked'),
-('12', '12', '2024-06-12', 'night', 'confirmed'),
-('13', '13', '2024-06-13', 'morning', 'confirmed'),
-('14', '14', '2024-06-09', 'morning', 'available'),
-('15', '15', '2024-06-15', 'evening', 'confirmed'),
-('16', '16', '2024-06-16', 'night', 'available'),
-('17', '17', '2024-06-15', 'evening', 'confirmed'),
-('18', '18', '2024-06-18', 'afternoon', 'available'),
-('19', '19', '2024-06-19', 'evening', 'available'),
-('20', '20', '2024-06-10', 'afternoon', 'available'),
-('21', '21', '2024-06-21', 'morning', 'confirmed'),
-('22', '22', '2024-06-22', 'morning', 'confirmed'),
-('23', '23', '2024-06-23', 'evening', 'booked'),
-('24', '24', '2024-06-24', 'night', 'confirmed'),
-('25', '25', '2024-06-25', 'morning', 'available'),
-('26', '26', '2024-06-26', 'afternoon', 'booked'),
-('27', '27', '2024-06-27', 'evening', 'confirmed'),
-('28', '28', '2024-06-25', 'morning', 'available'),
-('29', '29', '2024-08-04', 'morning', 'confirmed'),
-('30', '30', '2024-06-30', 'afternoon', 'confirmed'),
-('31', '31', '2024-07-01', 'evening', 'available'),
-('32', '32', '2024-07-02', 'night', 'available'),
-('33', '33', '2024-07-03', 'morning', 'confirmed'),
-('34', '34', '2024-07-04', 'afternoon', 'confirmed'),
-('35', '35', '2024-07-02', 'night', 'available'),
-('36', '36', '2024-07-01', 'evening', 'available'),
-('37', '37', '2024-07-07', 'morning', 'available'),
-('38', '38', '2024-07-08', 'afternoon', 'booked'),
-('39', '39', '2024-07-09', 'evening', 'confirmed'),
-('40', '40', '2024-07-10', 'night', 'available'),
-('41', '41', '2024-07-11', 'morning', 'booked'),
-('42', '42', '2024-07-12', 'afternoon', 'confirmed'),
-('43', '43', '2024-07-13', 'evening', 'available'),
-('44', '44', '2024-06-22', 'morning', 'available'),
-('45', '45', '2024-07-15', 'morning', 'confirmed'),
-('46', '46', '2024-07-10', 'night', 'available'),
-('47', '47', '2024-07-17', 'evening', 'booked'),
-('48', '48', '2024-07-18', 'night', 'confirmed'),
-('49', '49', '2024-07-19', 'afternoon', 'available'),
-('50', '50', '2024-07-10', 'night', 'available'),
-('51', '51', '2024-07-21', 'evening', 'confirmed'),
-('52', '52', '2024-07-22', 'night', 'available'),
-('53', '53', '2024-07-10', 'night', 'available'),
-('54', '54', '2024-07-24', 'afternoon', 'confirmed'),
-('55', '55', '2024-07-25', 'evening', 'available'),
-('56', '56', '2024-07-26', 'night', 'booked'),
-('57', '57', '2024-07-27', 'morning', 'confirmed'),
-('58', '58', '2024-08-06', 'evening', 'available'),
-('59', '59', '2024-07-29', 'evening', 'booked'),
-('60', '60', '2024-07-25', 'evening', 'available'),
-('61', '61', '2024-07-31', 'morning', 'available'),
-('62', '62', '2024-08-06', 'evening', 'available'),
-('63', '63', '2024-08-02', 'evening', 'confirmed'),
-('64', '64', '2024-08-03', 'night', 'available'),
-('65', '65', '2024-08-04', 'morning', 'available'),
-('66', '66', '2024-08-05', 'afternoon', 'confirmed'),
-('67', '67', '2024-08-06', 'evening', 'available'),
-('68', '68', '2024-08-07', 'night', 'booked'),
-('69', '69', '2024-08-08', 'morning', 'confirmed'),
-('70', '70', '2024-08-09', 'afternoon', 'available'),
-('71', '71', '2024-08-04', 'morning', 'available'),
-('72', '72', '2024-08-11', 'night', 'confirmed'),
-('73', '73', '2024-08-06', 'evening', 'available'),
-('74', '74', '2024-07-13', 'afternoon', 'available'),
-('75', '75', '2024-08-14', 'evening', 'confirmed'),
-('76', '76', '2024-07-04', 'afternoon', 'available'),
-('77', '77', '2024-08-16', 'morning', 'booked'),
-('78', '78', '2024-08-17', 'afternoon', 'confirmed'),
-('79', '79', '2024-08-18', 'evening', 'available'),
-('80', '80', '2024-08-19', 'night', 'booked'),
-('81', '81', '2024-08-18', 'evening', 'available'),
-('82', '82', '2024-08-21', 'afternoon', 'available'),
-('83', '83', '2024-08-22', 'evening', 'booked'),
-('84', '84', '2024-06-18', 'afternoon', 'available'),
-('85', '85', '2024-08-24', 'morning', 'available'),
-('86', '86', '2024-08-18', 'evening', 'available'),
-('87', '87', '2024-08-26', 'evening', 'confirmed'),
-('88', '88', '2024-06-13', 'morning', 'available'),
-('89', '89', '2024-08-23', 'night', 'available'),
-('90', '90', '2024-08-29', 'afternoon', 'confirmed'),
-('91', '91', '2024-08-25', 'afternoon', 'available'),
-('92', '92', '2024-08-31', 'night', 'booked'),
-('93', '93', '2024-08-25', 'afternoon', 'booked'),
-('94', '94', '2024-09-02', 'afternoon', 'available'),
-('95', '95', '2024-08-25', 'afternoon', 'available'),
-('96', '96', '2024-09-04', 'night', 'confirmed'),
-('97', '97', '2024-09-05', 'morning', 'available'),
-('98', '98', '2024-09-06', 'afternoon', 'booked'),
-('99', '99', '2024-09-05', 'morning', 'available'),
-('100', '100', '2024-09-08', 'night', 'available'),
-('101', '101', '2024-09-02', 'afternoon', 'available'),
-('102', '102', '2024-08-25', 'afternoon', 'available'),
-('103', '103', '2024-08-24', 'morning', 'available'),
-('104', '104', '2024-06-18', 'afternoon', 'available'),
-('105', '105', '2024-08-22', 'evening', 'booked'),
-('106', '106', '2024-08-21', 'afternoon', 'available'),
-('107', '107', '2024-08-21', 'afternoon', 'available'),
-('108', '108', '2024-08-26', 'evening', 'confirmed'),
-('109', '109', '2024-06-18', 'afternoon', 'available'),
-('110', '110', '2024-08-18', 'evening', 'available'),
-('111', '111', '2024-08-21', 'afternoon', 'available'),
-('112', '112', '2024-08-22', 'evening', 'booked'),
-('113', '113', '2024-06-18', 'afternoon', 'available'),
-('114', '114', '2024-08-24', 'morning', 'available'),
-('115', '115', '2024-07-12', 'afternoon', 'confirmed'),
-('116', '116', '2024-07-13', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('1', '1', '2024-06-01', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('2', '2', '2024-06-02', 'afternoon', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('3', '3', '2024-06-03', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('4', '4', '2024-06-04', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('5', '5', '2024-07-19', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('6', '6', '2024-06-01', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('7', '7', '2024-06-07', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('8', '8', '2024-06-07', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('9', '9', '2024-06-09', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('10', '10', '2024-06-10', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('11', '11', '2024-06-11', 'evening', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('12', '12', '2024-06-12', 'night', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('13', '13', '2024-06-13', 'morning', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('14', '14', '2024-06-09', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('15', '15', '2024-06-15', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('16', '16', '2024-06-16', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('17', '17', '2024-06-15', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('18', '18', '2024-06-18', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('19', '19', '2024-06-19', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('20', '20', '2024-06-10', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('21', '21', '2024-06-21', 'morning', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('22', '22', '2024-06-22', 'morning', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('23', '23', '2024-06-23', 'evening', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('24', '24', '2024-06-24', 'night', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('25', '25', '2024-06-25', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('26', '26', '2024-06-26', 'afternoon', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('27', '27', '2024-06-27', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('28', '28', '2024-06-25', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('29', '29', '2024-08-04', 'morning', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('30', '30', '2024-06-30', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('31', '31', '2024-07-01', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('32', '32', '2024-07-02', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('33', '33', '2024-07-03', 'morning', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('34', '34', '2024-07-04', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('35', '35', '2024-07-02', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('36', '36', '2024-07-01', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('37', '37', '2024-07-07', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('38', '38', '2024-07-08', 'afternoon', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('39', '39', '2024-07-09', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('40', '40', '2024-07-10', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('41', '41', '2024-07-11', 'morning', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('42', '42', '2024-07-12', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('43', '43', '2024-07-13', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('44', '44', '2024-06-22', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('45', '45', '2024-07-15', 'morning', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('46', '46', '2024-07-10', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('47', '47', '2024-07-17', 'evening', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('48', '48', '2024-07-18', 'night', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('49', '49', '2024-07-19', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('50', '50', '2024-07-10', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('51', '51', '2024-07-21', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('52', '52', '2024-07-22', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('53', '53', '2024-07-10', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('54', '54', '2024-07-24', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('55', '55', '2024-07-25', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('56', '56', '2024-07-26', 'night', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('57', '57', '2024-07-27', 'morning', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('58', '58', '2024-08-06', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('59', '59', '2024-07-29', 'evening', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('60', '60', '2024-07-25', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('61', '61', '2024-07-31', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('62', '62', '2024-08-06', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('63', '63', '2024-08-02', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('64', '64', '2024-08-03', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('65', '65', '2024-08-04', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('66', '66', '2024-08-05', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('67', '67', '2024-08-06', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('68', '68', '2024-08-07', 'night', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('69', '69', '2024-08-08', 'morning', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('70', '70', '2024-08-09', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('71', '71', '2024-08-04', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('72', '72', '2024-08-11', 'night', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('73', '73', '2024-08-06', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('74', '74', '2024-07-13', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('75', '75', '2024-08-14', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('76', '76', '2024-07-04', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('77', '77', '2024-08-16', 'morning', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('78', '78', '2024-08-17', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('79', '79', '2024-08-18', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('80', '80', '2024-08-19', 'night', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('81', '81', '2024-08-18', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('82', '82', '2024-08-21', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('83', '83', '2024-08-22', 'evening', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('84', '84', '2024-06-18', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('85', '85', '2024-08-24', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('86', '86', '2024-08-18', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('87', '87', '2024-08-26', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('88', '88', '2024-06-13', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('89', '89', '2024-08-23', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('90', '90', '2024-08-29', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('91', '91', '2024-08-25', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('92', '92', '2024-08-31', 'night', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('93', '93', '2024-08-25', 'afternoon', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('94', '94', '2024-09-02', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('95', '95', '2024-08-25', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('96', '96', '2024-09-04', 'night', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('97', '97', '2024-09-05', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('98', '98', '2024-09-06', 'afternoon', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('99', '99', '2024-09-05', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('100', '100', '2024-09-08', 'night', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('101', '101', '2024-09-02', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('102', '102', '2024-08-25', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('103', '103', '2024-08-24', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('104', '104', '2024-06-18', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('105', '105', '2024-08-22', 'evening', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('106', '106', '2024-08-21', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('107', '107', '2024-08-21', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('108', '108', '2024-08-26', 'evening', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('109', '109', '2024-06-18', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('110', '110', '2024-08-18', 'evening', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('111', '111', '2024-08-21', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('112', '112', '2024-08-22', 'evening', 'booked');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('113', '113', '2024-06-18', 'afternoon', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('114', '114', '2024-08-24', 'morning', 'available');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('115', '115', '2024-07-12', 'afternoon', 'confirmed');
+INSERT INTO available_schedule (schedule_id, pet_id, date, time_block, schedule_status) VALUES ('116', '116', '2024-07-13', 'evening', 'available');

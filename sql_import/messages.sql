@@ -1,45 +1,44 @@
-INSERT INTO messages VALUES
-('1', '1', '6', '2024-06-04 08:00:00', 'Hey Ethan, would you like to schedule a playdate for our pets this weekend?', 'read'),
-('2', '6', '1', '2024-06-04 08:05:00', 'Sure, that sounds like fun! How about Saturday afternoon?', 'read'),
-('3', '1', '6', '2024-06-04 08:10:00', 'Saturday works for us. Where should we meet?', 'read'),
-('4', '6', '1', '2024-06-04 08:15:00', 'There\'s a nice park near my place. Let\'s meet there around 2 PM.', 'read'),
-('5', '1', '6', '2024-06-04 08:20:00', 'Great, see you then!', 'liked'),
-('6', '6', '1', '2024-06-04 08:25:00', 'Looking forward to it!', 'liked'),
-('7', '65', '29', '2024-06-07 09:00:00', 'Hi Avery, would you and your pet be interested in a playdate at the dog park this weekend?', 'read'),
-('8', '29', '65', '2024-06-07 09:05:00', 'Sounds like a blast! Saturday morning or afternoon works for us.', 'read'),
-('9', '65', '29', '2024-06-07 09:10:00', 'Let\'s aim for Saturday morning. How about 10 AM?', 'liked'),
-('10', '29', '65', '2024-06-07 09:15:00', 'Perfect! See you at the dog park!', 'read'),
-('11', '34', '76', '2024-06-07 10:00:00', 'Hey Alyssa, would you like to bring your pet over for a playdate with my cat this weekend?', 'read'),
-('12', '76', '34', '2024-06-07 10:05:00', 'That sounds like a purr-fect idea! Saturday afternoon works for us.', 'read'),
-('13', '34', '76', '2024-06-07 10:10:00', 'Great! Let\'s plan for Saturday around 3 PM.', 'read'),
-('14', '76', '34', '2024-06-07 10:15:00', 'Can\'t wait to meet your cat!', 'liked'),
-('15', '22', '44', '2024-06-08 11:00:00', 'Hi Ella, would you be interested in a playdate for our pets this weekend?', 'read'),
-('16', '44', '22', '2024-06-08 11:05:00', 'Absolutely! Saturday works for us. What did you have in mind?', 'read'),
-('17', '22', '44', '2024-06-08 11:10:00', 'How about a stroll in the park on Saturday morning?', 'liked'),
-('18', '44', '22', '2024-06-08 11:15:00', 'Sounds lovely! Let\'s meet at the park at 9 AM.', 'read'),
-('19', '22', '44', '2024-06-08 11:20:00', 'See you there!', 'read'),
-('20', '44', '22', '2024-06-08 11:25:00', 'Looking forward to it!', 'read'),
-('21', '5', '49', '2024-06-08 12:00:00', 'Hey Luke, would you and your pet be interested in a playdate at the beach this weekend?', 'read'),
-('22', '49', '5', '2024-06-08 12:05:00', 'That sounds like a splashing good time! When were you thinking?', 'read'),
-('23', '5', '49', '2024-06-08 12:10:00', 'Let\'s go on Sunday afternoon. How about 3 PM?', 'read'),
-('24', '49', '5', '2024-06-08 12:15:00', 'Sunday at 3 PM works for us! Which beach?', 'read'),
-('25', '5', '49', '2024-06-08 12:20:00', 'Let\'s meet at Sandy Shores Beach!', 'read'),
-('26', '49', '5', '2024-06-08 12:25:00', 'See you there with our beach toys!', 'read'),
-('27', '13', '88', '2024-06-08 13:00:00', 'Hi Sophia, would you and your pet like to join us for a playdate in the park this weekend?', 'read'),
-('28', '88', '13', '2024-06-08 13:05:00', 'That sounds like a fun outing! When are you thinking?', 'read'),
-('29', '13', '88', '2024-06-08 13:10:00', 'How about Saturday morning at 11 AM?', 'read'),
-('30', '88', '13', '2024-06-08 13:15:00', 'Sounds perfect! Which park should we meet at?', 'read'),
-('31', '13', '88', '2024-06-08 13:20:00', 'Let\'s meet at Central Park!', 'read'),
-('32', '88', '13', '2024-06-08 13:25:00', 'Looking forward to it!', 'read'),
-('33', '3', '22', '2024-06-08 14:00:00', 'Hi Daniel, would your pet be interested in a playdate with my pet this weekend?', 'blocked'),
-('34', '8', '17', '2024-06-08 15:00:00', 'Hey Sarah, would you like to schedule a playdate for our pets this weekend?', 'blocked'),
-('35', '17', '8', '2024-06-08 15:05:00', 'Sorry, but I\'m not interested.', 'blocked'),
-('36', '28', '57', '2024-06-08 16:00:00', 'Hi Mark, are you up for a playdate for our pets this weekend?', 'unread'),
-('37', '57', '28', '2024-06-08 16:05:00', 'Sorry, I already have plans for the weekend.', 'unread'),
-('38', '37', '84', '2024-06-08 17:00:00', 'Hey Emily, would you and your pet like to join us for a playdate at the park this weekend?', 'blocked'),
-('39', '84', '37', '2024-06-08 17:05:00', 'I appreciate the invite, but we\'re busy this weekend.', 'blocked'),
-('40', '41', '76', '2024-06-08 18:00:00', 'Hey Jason, how about a playdate for our pets this weekend?', 'unread'),
-('41', '76', '41', '2024-06-08 18:05:00', 'I\'m not available this weekend, maybe another time.', 'unread'),
-('42', '29', '65', '2024-06-08 19:00:00', 'Hi Avery, would you and your pet be interested in a playdate at the dog park this weekend?', 'blocked'),
-('43', '12', '50', '2024-06-08 20:00:00', 'Hey James, would you like to schedule a playdate for our pets this weekend?', 'blocked'),
-('44', '53', '28', '2024-06-14 21:00:00', 'Hi Lisa, are you up for a playdate for our pets this weekend?', 'blocked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('1', '1', '6', '2024-06-04 08:00:00', 'Hey Ethan, would you like to schedule a playdate for our pets this weekend?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('2', '6', '1', '2024-06-04 08:05:00', 'Sure, that sounds like fun! How about Saturday afternoon?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('3', '1', '6', '2024-06-04 08:10:00', 'Saturday works for us. Where should we meet?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('4', '6', '1', '2024-06-04 08:15:00', 'There's a nice park near my place. Let's meet there around 2 PM.', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('5', '1', '6', '2024-06-04 08:20:00', 'Great, see you then!', 'liked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('6', '6', '1', '2024-06-04 08:25:00', 'Looking forward to it!', 'liked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('7', '65', '29', '2024-06-07 09:00:00', 'Hi Avery, would you and your pet be interested in a playdate at the dog park this weekend?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('8', '29', '65', '2024-06-07 09:05:00', 'Sounds like a blast! Saturday morning or afternoon works for us.', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('9', '65', '29', '2024-06-07 09:10:00', 'Let's aim for Saturday morning. How about 10 AM?', 'liked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('10', '29', '65', '2024-06-07 09:15:00', 'Perfect! See you at the dog park!', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('11', '34', '76', '2024-06-07 10:00:00', 'Hey Alyssa, would you like to bring your pet over for a playdate with my cat this weekend?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('12', '76', '34', '2024-06-07 10:05:00', 'That sounds like a purr-fect idea! Saturday afternoon works for us.', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('13', '34', '76', '2024-06-07 10:10:00', 'Great! Let's plan for Saturday around 3 PM.', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('14', '76', '34', '2024-06-07 10:15:00', 'Can't wait to meet your cat!', 'liked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('15', '22', '44', '2024-06-08 11:00:00', 'Hi Ella, would you be interested in a playdate for our pets this weekend?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('16', '44', '22', '2024-06-08 11:05:00', 'Absolutely! Saturday works for us. What did you have in mind?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('17', '22', '44', '2024-06-08 11:10:00', 'How about a stroll in the park on Saturday morning?', 'liked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('18', '44', '22', '2024-06-08 11:15:00', 'Sounds lovely! Let's meet at the park at 9 AM.', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('19', '22', '44', '2024-06-08 11:20:00', 'See you there!', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('20', '44', '22', '2024-06-08 11:25:00', 'Looking forward to it!', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('21', '5', '49', '2024-06-08 12:00:00', 'Hey Luke, would you and your pet be interested in a playdate at the beach this weekend?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('22', '49', '5', '2024-06-08 12:05:00', 'That sounds like a splashing good time! When were you thinking?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('23', '5', '49', '2024-06-08 12:10:00', 'Let's go on Sunday afternoon. How about 3 PM?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('24', '49', '5', '2024-06-08 12:15:00', 'Sunday at 3 PM works for us! Which beach?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('25', '5', '49', '2024-06-08 12:20:00', 'Let's meet at Sandy Shores Beach!', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('26', '49', '5', '2024-06-08 12:25:00', 'See you there with our beach toys!', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('27', '13', '88', '2024-06-08 13:00:00', 'Hi Sophia, would you and your pet like to join us for a playdate in the park this weekend?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('28', '88', '13', '2024-06-08 13:05:00', 'That sounds like a fun outing! When are you thinking?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('29', '13', '88', '2024-06-08 13:10:00', 'How about Saturday morning at 11 AM?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('30', '88', '13', '2024-06-08 13:15:00', 'Sounds perfect! Which park should we meet at?', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('31', '13', '88', '2024-06-08 13:20:00', 'Let's meet at Central Park!', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('32', '88', '13', '2024-06-08 13:25:00', 'Looking forward to it!', 'read');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('33', '3', '22', '2024-06-08 14:00:00', 'Hi Daniel, would your pet be interested in a playdate with my pet this weekend?', 'blocked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('34', '8', '17', '2024-06-08 15:00:00', 'Hey Sarah, would you like to schedule a playdate for our pets this weekend?', 'blocked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('35', '17', '8', '2024-06-08 15:05:00', 'Sorry, but I'm not interested.', 'blocked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('36', '28', '57', '2024-06-08 16:00:00', 'Hi Mark, are you up for a playdate for our pets this weekend?', 'unread');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('37', '57', '28', '2024-06-08 16:05:00', 'Sorry, I already have plans for the weekend.', 'unread');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('38', '37', '84', '2024-06-08 17:00:00', 'Hey Emily, would you and your pet like to join us for a playdate at the park this weekend?', 'blocked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('39', '84', '37', '2024-06-08 17:05:00', 'I appreciate the invite, but we're busy this weekend.', 'blocked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('40', '41', '76', '2024-06-08 18:00:00', 'Hey Jason, how about a playdate for our pets this weekend?', 'unread');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('41', '76', '41', '2024-06-08 18:05:00', 'I'm not available this weekend, maybe another time.', 'unread');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('42', '29', '65', '2024-06-08 19:00:00', 'Hi Avery, would you and your pet be interested in a playdate at the dog park this weekend?', 'blocked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('43', '12', '50', '2024-06-08 20:00:00', 'Hey James, would you like to schedule a playdate for our pets this weekend?', 'blocked');
+INSERT INTO messages (message_id, sender, receiver, message_time, content, message_status) VALUES ('44', '53', '28', '2024-06-14 21:00:00', 'Hi Lisa, are you up for a playdate for our pets this weekend?', 'blocked');
