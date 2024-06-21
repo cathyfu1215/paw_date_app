@@ -1,6 +1,4 @@
-
 import React from 'react';
-
 import { Dimensions, Image, StyleSheet, View } from 'react-native';
 
 const windowWidth = Dimensions.get('window').width;
@@ -13,6 +11,7 @@ const styles = StyleSheet.create({
   image: {
      width: windowWidth,
      height: windowHeight,
+     resizeMode: 'contain', // Add this line
   },
   container: {
     padding: 16,
@@ -35,5 +34,3 @@ const PlaydateList = () => {
 };
 
 export default PlaydateList;
-
-  

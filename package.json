@@ -1,5 +1,4 @@
 {
-  "homepage":"https://cathyfu1215.github.io/paw_date_app/",
   "name": "paw-date-app",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
@@ -7,9 +6,7 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "web": "expo start --web"
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.1.1",

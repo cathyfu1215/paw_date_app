@@ -20,10 +20,10 @@ const Owners = ({ owner }) => {
         <View style={styles.infoContainer}>
           <Text style={styles.label}>Description:</Text>
           <Text style={styles.info}>{owner.description}</Text>
-          <Text style={styles.label}>Phone:</Text>
+          {/* <Text style={styles.label}>Phone:</Text>
           <Text style={styles.info}>{owner.phone_number}</Text>
           <Text style={styles.label}>Email:</Text>
-          <Text style={styles.info}>{owner.email}</Text>
+          <Text style={styles.info}>{owner.email}</Text> */}
           <Text style={styles.label}>Postal Code:</Text>
           <Text style={styles.info}>{owner.postal_code}</Text>
           <Text style={styles.label}>Registered at:</Text>
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   image: {
     position: 'absolute',
     width: '100%',
-    height: '100%',
+    height: '120%',
   },
   ownerName: {
     fontSize: 24,

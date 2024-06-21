@@ -8,6 +8,61 @@ const styles = StyleSheet.create({
 });
 
 const pets = [
+
+  {
+    pet_id: 9,
+    name: 'Arlo',
+    photo: 'https://pamsdogtraining.com/wp-content/uploads/2022/07/long-haired-chihuahua-1024x683.jpg',
+    pet_status: 'healthy',
+    description: 'Playful and joyful',
+    species_breed_id: 1,
+    date_of_birth: '2022-12-12',
+    gender: 'other',
+    postal_code: 'V5N1L7',
+    has_full_inmmune_shots: 0,
+    is_pregnant: 0,
+    avg_rating: 2.83,
+    num_ratings: 23,
+    looking_for: 'playdate',
+    registered_time: '2024-05-25 19:28',
+    is_neutered: 1
+  },
+  {
+    pet_id: 7,
+    name: 'Sherlock',
+    photo: 'https://cdn.shopify.com/s/files/1/2668/1922/files/british-shorthair-1.jpg?v=1689089942',
+    pet_status: 'healthy',
+    description: 'Friendly with everyone',
+    species_breed_id: 56,
+    date_of_birth: '2021-03-09',
+    gender: 'female',
+    postal_code: 'V5M3T4',
+    has_full_inmmune_shots: 0,
+    is_pregnant: 0,
+    avg_rating: 4.75,
+    num_ratings: 3,
+    looking_for: 'playdate',
+    registered_time: '2024-01-23 08:47',
+    is_neutered: 1
+  },
+  {
+    pet_id: 17,
+    name: 'Daisy',
+    photo: 'https://www.dutch.com/cdn/shop/articles/shutterstock_1898629669.jpg?v=1697090094&width=1512',
+    pet_status: 'healthy',
+    description: 'Playful and curious',
+    species_breed_id: NaN,
+    date_of_birth: '54',
+    gender: '2017-04-22',
+    postal_code: 'other',
+    has_full_inmmune_shots: NaN,
+    is_pregnant: 1,
+    avg_rating: 4,
+    num_ratings: 22,
+    looking_for: 'playdate',
+    registered_time: '2024-02-06 21:00',
+    is_neutered: 2024
+  },
   {
       pet_id: 1,
       name: 'Mochi',
@@ -116,24 +171,7 @@ const pets = [
       registered_time: '2024-04-25 12:51',
       is_neutered: 1
     },
-    {
-      pet_id: 7,
-      name: 'Sherlock',
-      photo: 'https://cdn.shopify.com/s/files/1/2668/1922/files/british-shorthair-1.jpg?v=1689089942',
-      pet_status: 'healthy',
-      description: 'Friendly with everyone',
-      species_breed_id: 56,
-      date_of_birth: '2021-03-09',
-      gender: 'female',
-      postal_code: 'V5M3T4',
-      has_full_inmmune_shots: 0,
-      is_pregnant: 0,
-      avg_rating: 4.75,
-      num_ratings: 3,
-      looking_for: 'playdate',
-      registered_time: '2024-01-23 08:47',
-      is_neutered: 1
-    },
+    
     {
       pet_id: 8,
       name: 'Maple',
@@ -152,24 +190,7 @@ const pets = [
       registered_time: '2024-04-22 05:39',
       is_neutered: 1
     },
-    {
-      pet_id: 9,
-      name: 'Arlo',
-      photo: 'https://pamsdogtraining.com/wp-content/uploads/2022/07/long-haired-chihuahua-1024x683.jpg',
-      pet_status: 'healthy',
-      description: 'Playful and joyful',
-      species_breed_id: 1,
-      date_of_birth: '2022-12-12',
-      gender: 'other',
-      postal_code: 'V5N1L7',
-      has_full_inmmune_shots: 0,
-      is_pregnant: 0,
-      avg_rating: 2.83,
-      num_ratings: 23,
-      looking_for: 'playdate',
-      registered_time: '2024-05-25 19:28',
-      is_neutered: 1
-    },
+  
     {
       pet_id: 10,
       name: 'Bumble',
@@ -295,24 +316,6 @@ const pets = [
       looking_for: 'playdate',
       registered_time: '2024-02-07 21:19',
       is_neutered: 1
-    },
-    {
-      pet_id: 17,
-      name: 'Daisy',
-      photo: 'https://www.dutch.com/cdn/shop/articles/shutterstock_1898629669.jpg?v=1697090094&width=1512',
-      pet_status: 'healthy',
-      description: 'Playful and curious',
-      species_breed_id: NaN,
-      date_of_birth: '54',
-      gender: '2017-04-22',
-      postal_code: 'other',
-      has_full_inmmune_shots: NaN,
-      is_pregnant: 1,
-      avg_rating: 4,
-      num_ratings: 22,
-      looking_for: 'playdate',
-      registered_time: '2024-02-06 21:00',
-      is_neutered: 2024
     },
     {
       pet_id: 18,

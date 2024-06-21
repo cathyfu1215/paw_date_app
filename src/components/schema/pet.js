@@ -72,8 +72,8 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'cover',
     padding: 16,
-    width: '110%',
-    height: '80%',
+    width: '90%',
+    height: '90%',
   },
   petName: {
     fontSize: 24,

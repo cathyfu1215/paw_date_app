@@ -32,8 +32,8 @@ const AppBar = () => {
       <ScrollView horizontal>
       <Link to="/pets"><Text style={styles.button}>Pets</Text></Link>
       <Link to="/owners"><Text style={styles.button}>Owners</Text></Link>
-      <Link to="/playdates"><Text style={styles.button}>Playdates</Text></Link>
       <Link to="/book"><Text style={styles.button}>Book a Playdate</Text></Link>
+      <Link to="/playdates"><Text style={styles.button}>Playdates</Text></Link>
       <Link to="/rate"><Text style={styles.button}>Rate a Playdate</Text></Link>
       <Link to="/signin"><Text style={styles.button}>Sign In</Text></Link>
       <Link to="/signup"><Text style={styles.button}>Sign Up</Text></Link>
