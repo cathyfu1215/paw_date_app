@@ -23,7 +23,6 @@ const RatePlayDate = () => {
     <ImageBackground source={require('../../assets/petsfaces.jpg')} style={styles.image} imageStyle={{ opacity: 0.11 }}>
 
       <Text style={styles.title}>Rate Play Date</Text>
-      <TextInput style={styles.input} placeholder="Rating ID" onChangeText={setRatingId} value={ratingId} />
       <TextInput style={styles.input} placeholder="Owner ID Who Rates" onChangeText={setOwnerIdWhoRates} value={ownerIdWhoRates} />
       <TextInput style={styles.input} placeholder="Rated Pet ID" onChangeText={setRatedPetId} value={ratedPetId} />
       <TextInput style={styles.input} placeholder="Pet Rating" onChangeText={setPetRating} value={petRating} />

@@ -53,15 +53,15 @@ const pets = [
     description: 'Playful and curious',
     species_breed_id: NaN,
     date_of_birth: '54',
-    gender: '2017-04-22',
-    postal_code: 'other',
-    has_full_inmmune_shots: NaN,
+    gender: 'female',
+    postal_code: 'V5M3T4',
+    has_full_inmmune_shots: 1,
     is_pregnant: 1,
     avg_rating: 4,
     num_ratings: 22,
     looking_for: 'playdate',
     registered_time: '2024-02-06 21:00',
-    is_neutered: 2024
+    is_neutered: 1
   },
   {
       pet_id: 1,
@@ -71,7 +71,7 @@ const pets = [
       pet_status: 'healthy',
       description: 'Friendly and playful',
       species_breed_id: 1,
-      gender: 'F',
+      gender: 'female',
       postal_code: 'V5L4S1',
       has_full_inmmune_shots: 1,
       is_pregnant: 0,
